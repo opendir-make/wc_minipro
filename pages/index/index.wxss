@@ -1,0 +1,38 @@
+/**index.wxss**/
+
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lightcoral;
+}
+
+.index-container image{
+  margin-top: 50rpx;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(230, 44, 44);
+}
+
+.firstpage{
+  width: 620rpx;
+  height: 436rpx;
+  margin-top: 1rpx;
+}
+
+.primay{
+  margin-top: 100rpx;
+  border: 5px solid #00BFFF;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.primay-text{
+  font-size: 50rpx;
+  color: black;
+}

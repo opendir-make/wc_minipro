@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<text class='header'>我的相册</text>
+
+<view class='index-container'>
+
+<image class='firstpage' src='../images/IMG_0629.JPG'></image>
+
+<view class='primay' bindtap='goNews1Tap'>
+<text class='primay-text'>点我查看相册</text>
+</view>
+</view>
+

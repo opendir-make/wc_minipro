@@ -1,0 +1,24 @@
+<!--pages/h2/h2.wxml-->
+<text class='label'>香港街头的AE86</text>
+<text class='label2'>\n</text>
+
+<view class='h2-container'>
+
+<swiper indicator-dots='{{indicatordots}}' autoplay='{{autoplay}}' interval='{{interval}}'>
+
+<swiper-item>
+<image class='logo2' src='../images/IMG0849.JPG'></image>
+</swiper-item>
+<swiper-item>
+<image class='logo2' src='../images/IMG0850.JPG'></image>
+</swiper-item>
+<swiper-item>
+<image class='logo2' src='../images/IMG0851.JPG'></image>
+</swiper-item>
+
+</swiper>
+
+<view class='h2primay' bindtap='goNews2Tap'>
+<text class='h2primay-text'>点我返回首页</text>
+</view>
+</view>
