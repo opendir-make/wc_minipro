@@ -1,20 +1,22 @@
-// pages/HomePage/HomePage.js
+//引入数据
+var newsData = require("../data/HomePageData.js");
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    indicatorDots:"true",
-    autoplay:"true",
-    interval:"3000",
-    circular:"true"
+    indicatorDots: "true",
+    autoplay: "true",
+    interval: "3000",
+    circular: "true",
+    useData: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function(options) {
+    this.setData({
+      useData: newsData.initData
+    })
   }
 })
