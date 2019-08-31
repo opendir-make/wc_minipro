@@ -1,0 +1,70 @@
+<!--pages/HomePage/HomePage.wxml-->
+<view class="HomePage-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <!--banner-->
+    <swiper-item>
+      <image src="http://pic1.win4000.com/wallpaper/c/53cdd1f7c1f21.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/lvpics/w=600/sign=1350023d79899e51788e391472a5d990/b21bb051f819861810d03e4448ed2e738ad4e65f.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="articlelist">
+  <view class="author-info">
+    <image class="author-icon" src="../images/me.png"></image>
+    <text class="author-name">小K同学</text>
+    <text class="author-date">2019-8-31</text>
+  </view>
+  <text class="title">你的图文标题</text>
+  <image class="article-img" src="http://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg"></image>
+  <text class="article-text">你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容。</text>
+</view>
+
+<view class="articlelist">
+  <view class="author-info">
+    <image class="author-icon" src="../images/me.png"></image>
+    <text class="author-name">小K同学</text>
+    <text class="author-date">2019-8-31</text>
+  </view>
+  <text class="title">你的图文标题</text>
+  <image class="article-img" src="http://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg"></image>
+  <text class="article-text">你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容。</text>
+</view>
+
+<view class="articlelist">
+  <view class="author-info">
+    <image class="author-icon" src="../images/me.png"></image>
+    <text class="author-name">小K同学</text>
+    <text class="author-date">2019-8-31</text>
+  </view>
+  <text class="title">你的图文标题</text>
+  <image class="article-img" src="http://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg"></image>
+  <text class="article-text">你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容。</text>
+</view>
+
+<view class="articlelist">
+  <view class="author-info">
+    <image class="author-icon" src="../images/me.png"></image>
+    <text class="author-name">小K同学</text>
+    <text class="author-date">2019-8-31</text>
+  </view>
+  <text class="title">你的图文标题</text>
+  <image class="article-img" src="http://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg"></image>
+  <text class="article-text">你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容。</text>
+</view>
+
+<view class="articlelist">
+  <view class="author-info">
+    <image class="author-icon" src="../images/me.png"></image>
+    <text class="author-name">小K同学</text>
+    <text class="author-date">2019-8-31</text>
+  </view>
+  <text class="title">你的图文标题</text>
+  <image class="article-img" src="http://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg"></image>
+  <text class="article-text">你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容，你的图文内容。</text>
+</view>

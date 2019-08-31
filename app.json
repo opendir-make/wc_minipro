@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/HomePage/HomePage",
+    "pages/Favourite/Favourite",
+    "pages/Me/Me"
+  ],
+  "window": {
+    "navigationBarTitleText": "国际要闻",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#5599FF",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/HomePage/HomePage",
+        "iconPath": "pages/images/home (1).png",
+        "selectedIconPath": "pages/images/home.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/Favourite/Favourite",
+        "iconPath": "pages/images/log1.png",
+        "selectedIconPath": "pages/images/log.png",
+        "text": "Favourtie"
+      },
+      {
+        "pagePath": "pages/Me/Me",
+        "iconPath": "pages/images/me (1).png",
+        "selectedIconPath": "pages/images/me.png",
+        "text": "Me"
+      }
+    ]
+  }
+}
