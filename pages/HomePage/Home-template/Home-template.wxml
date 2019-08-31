@@ -1,0 +1,12 @@
+<template name="homeTemplate">
+  <view class="articlelist">
+    <view class="author-info">
+      <image class="author-icon" src="{{authorIcon}}"></image>
+      <text class="author-name">{{authorName}}</text>
+      <text class="author-date">{{authorDate}}</text>
+    </view>
+    <text class="title">{{title}}</text>
+    <image class="article-img" src="{{articleImg}}"></image>
+    <text class="article-text">{{articleText}}</text>
+  </view>
+</template>

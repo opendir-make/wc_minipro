@@ -1,27 +1,20 @@
+<import src="Home-template/Home-template.wxml" />
+
 <view class="HomePage-container">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
     <!--banner-->
     <swiper-item>
-      <image src="http://pic1.win4000.com/wallpaper/c/53cdd1f7c1f21.jpg"></image>
+      <image src="https://www.whats-on-netflix.com/wp-content/uploads/2016/04/bbc-documentaries-leaving-netflix.jpeg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="http://gss0.baidu.com/-fo3dSag_xI4khGko9WTAnF6hhy/lvpics/w=600/sign=1350023d79899e51788e391472a5d990/b21bb051f819861810d03e4448ed2e738ad4e65f.jpg"></image>
+      <image src="http://lbimg.tvmao.com/stillcut/KpwpLRSqKn8pVnKsKDwmLR=.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image>
+      <image src="http://a388.phobos.apple.com/us/r30/Purple4/v4/9d/9f/2a/9d9f2a7c-f482-35f4-be48-3da6cd68f4f0/mzl.jqhcfyux.png"></image>
     </swiper-item>
   </swiper>
 </view>
 
 <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-  <view class="articlelist">
-    <view class="author-info">
-      <image class="author-icon" src="{{item.authorIcon}}"></image>
-      <text class="author-name">{{item.authorName}}</text>
-      <text class="author-date">{{item.authorDate}}</text>
-    </view>
-    <text class="title">{{item.title}}</text>
-    <image class="article-img" src="{{item.articleImg}}"></image>
-    <text class="article-text">{{item.articleText}}</text>
-  </view>
+  <template is="homeTemplate" data="{{...item}}" />
 </block>
