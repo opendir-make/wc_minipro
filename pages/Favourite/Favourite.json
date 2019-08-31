@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "最爱",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#5599FF",
+  "navigationBarTextStyle": "white"
+}

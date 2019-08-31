@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "国际要闻",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#5599FF",
+  "navigationBarTextStyle": "white"
+  }

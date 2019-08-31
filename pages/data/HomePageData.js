@@ -1,5 +1,5 @@
 var initData = [{
-    //"newsid": 0,
+    "newsid": 0,
     "authorIcon": "../images/me.png",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
@@ -9,7 +9,7 @@ var initData = [{
   },
 
   {
-    //"newsid": 1,
+    "newsid": 1,
     "authorIcon": "../images/me.png",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
@@ -19,7 +19,7 @@ var initData = [{
   },
 
   {
-    //"newsid": 1,
+    "newsid": 2,
     "authorIcon": "../images/me.png",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
@@ -29,7 +29,7 @@ var initData = [{
   },
 
   {
-    //"newsid": 1,
+    "newsid": 3,
     "authorIcon": "../images/me.png",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
@@ -39,7 +39,7 @@ var initData = [{
   },
 
   {
-    //"newsid": 1,
+    "newsid": 4,
     "authorIcon": "../images/me.png",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",

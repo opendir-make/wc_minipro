@@ -16,5 +16,7 @@
 </view>
 
 <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-  <template is="homeTemplate" data="{{...item}}" />
+  <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}">
+    <template is="homeTemplate" data="{{...item}}" />
+  </view>
 </block>
