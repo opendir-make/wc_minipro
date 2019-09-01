@@ -18,6 +18,7 @@
   width: 60rpx;
   height: 60rpx;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 .author-name {

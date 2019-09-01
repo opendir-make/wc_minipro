@@ -7,6 +7,6 @@
     </view>
     <text class="title">{{title}}</text>
     <image class="article-img" src="{{articleImg}}"></image>
-    <text class="article-text">{{articleText}}</text>
+    <text class="article-text">{{articleMinText}}</text>
   </view>
 </template>

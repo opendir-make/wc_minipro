@@ -1,2 +1,15 @@
-<!--pages/HomePage/PageDetail/PageDetail.wxml-->
-<text>详情页</text>
+<view class="news-detail-container">
+<view>{{detailData}}</view>
+<image class="head-img" src="{{articleImg}}"></image>
+<view class="author-info">
+<image class="author-icon" src="{{authorIcon}}"></image>
+<text class="author-name">{{authorName}}</text>
+<text class="const-text">发表于 </text>
+<text class="author-date">{{authorDate}}</text>
+</view>
+<text class="title">{{title}}</text>
+<view class="tools">
+<view class="horizon"></view>
+</view>
+<text class="articleText">{{articleText}}</text>
+</view>
