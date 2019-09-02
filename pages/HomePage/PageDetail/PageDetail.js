@@ -4,7 +4,7 @@ Page({
   data: {
     newsid:""
   },
-//recover
+  
   onLoad: function(options) {
     this.setData(newsData.initData[options.newsid]) //获取新闻数据用
     this.setData({

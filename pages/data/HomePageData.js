@@ -33,7 +33,7 @@ var initData = [{
 
   {
     "newsid": 3,
-    "authorIcon": "../images/me.png",
+    "authorIcon": "http://n.sinaimg.cn/translate/w402h363/20180213/bg7r-fyrpeie1413753.jpg",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
     "title": "你的图文标题",
@@ -44,7 +44,7 @@ var initData = [{
 
   {
     "newsid": 4,
-    "authorIcon": "../images/me.png",
+    "authorIcon": "http://n.sinaimg.cn/translate/w402h363/20180213/bg7r-fyrpeie1413753.jpg",
     "authorName": "小K同学",
     "authorDate": "2019/8/31",
     "title": "你的图文标题",
