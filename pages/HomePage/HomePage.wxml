@@ -13,10 +13,11 @@
       <image src="http://a388.phobos.apple.com/us/r30/Purple4/v4/9d/9f/2a/9d9f2a7c-f482-35f4-be48-3da6cd68f4f0/mzl.jqhcfyux.png"></image>
     </swiper-item>
   </swiper>
-</view>
 
-<block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-  <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}">
-    <template is="homeTemplate" data="{{...item}}" />
-  </view>
-</block>
+  <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+    <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}">
+      <template is="homeTemplate" data="{{...item}}" />
+    </view>
+  </block>
+
+</view>

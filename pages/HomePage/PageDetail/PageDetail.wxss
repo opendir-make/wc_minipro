@@ -1,12 +1,8 @@
 .news-detail-container {
   display: flex;
   flex-direction: column;
-  margin-top: 20rpx;
-  margin-bottom: 40rpx;
-  background-color: #fff;
-  border-top: 1px solid #ededed;
-  padding: 10px;
-  padding-bottom: 5px;
+  border-bottom: 40rpx;
+  padding: 15rpx;
 }
 
 .author-info {
@@ -17,7 +13,7 @@
 .head-img {
   width: 100%;
   vertical-align: middle;
-  border-radius: 5rpx;
+  border-radius: 10rpx;
 }
 
 .author-icon {
@@ -25,10 +21,13 @@
   height: 60rpx;
   vertical-align: middle;
   border-radius: 50%;
+  margin-top: 10rpx;
 }
 
 .author-name {
   margin-left: 20rpx;
+  margin-top: 10rpx;
+  vertical-align: middle;
 }
 
 .const-text {
@@ -37,6 +36,7 @@
   color: #cccbcb;
   margin-bottom: 5px;
   font-size: 26rpx;
+  margin-top: 10rpx;
 }
 
 .author-date {
@@ -44,30 +44,44 @@
   color: #cccbcb;
   margin-bottom: 5px;
   font-size: 26rpx;
+  margin-top: 10rpx;
 }
 
 .title {
   margin-left: 20rpx;
   font-size: 36rpx;
   font-weight: 700;
-  margin-top: 10rpx;
+  margin-top: 5rpx;
   letter-spacing: 2px;
   color: #4b556c;
 }
 
-.tools{
-  margin-top: 10rpx;
+.tools {
+  margin-top: 20rpx;
+}
+
+.circle-img {
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 1rpx;
+  vertical-align: middle;
+}
+
+.circle-img image {
+  width: 45rpx;
+  height: 45rpx;
 }
 
 .horizon {
+  width: 660rpx;
   height: 1px;
-  background-color: #4b556c;
+  background-color: #e5e5e5;
   vertical-align: middle;
   position: relative;
   top: 46rpx;
   margin: 0 auto;
   z-index: -99;
-  margin-top: 20rpx;
+  margin-top: 15rpx;
 }
 
 .articleText {

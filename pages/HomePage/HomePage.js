@@ -8,7 +8,7 @@ Page({
     autoplay: "true",
     interval: "3000",
     circular: "true",
-    useData: ""
+    useData: []
   },
 
   //生命周期函数--监听页面加载
@@ -21,7 +21,7 @@ Page({
   //跳转详情页
   goNewsDetail: function(event) {
     wx.navigateTo({
-      url: "PageDetail/PageDetail?newsid="+event.currentTarget.dataset.newsid
+      url: "PageDetail/PageDetail?newsid=" + event.currentTarget.dataset.newsid
     })
-  }
+  },
 })
