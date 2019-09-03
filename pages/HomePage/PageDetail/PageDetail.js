@@ -55,8 +55,12 @@ Page({
         duration: 700,
         mask: true
       })
+  },
+
+  onShareAppMessage: function() {
+    return {
+      title: newsData.initData[this.data.newsid].title,
+      path: "pages/HomePage/PageDetail/PageDetail"
+    }
   }
-
-
-
 })
