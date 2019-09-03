@@ -2,14 +2,16 @@ var newsData = require("../../data/HomePageData.js") //引入数据
 
 Page({
   data: {
-    newsid:""
+    newsid: ""
   },
-  
+
   onLoad: function(options) {
     this.setData(newsData.initData[options.newsid]) //获取新闻数据用
     this.setData({
       newsid: options.newsid //把唯一id放到data中
     })
+
+    //读取和存储都是在操作整体
 
     //第一次进入的时候判断是否存在本地存储以及收藏
     var newsCollect = wx.getStorageSync('newsCollect');
@@ -22,7 +24,7 @@ Page({
     } else {
       //第一次进入根本不存在数据
       var newsCollect = {};
-      //我把当前唯一id扔到newsCollect对象中，默认false
+      //把当前唯一id扔到newsCollect对象中，默认false
       newsCollect[options.newsid] = false;
       //扔到本地存储中
       wx.setStorageSync('newsCollect', newsCollect);
@@ -41,8 +43,20 @@ Page({
     wx.setStorageSync("newsCollect", newsCollect);
     //更新视图
     this.setData({
-      collected: newCollect
-      //collected:newsCollect[this.data.newsid]
-    })
+        collected: newCollect
+        //collected:newsCollect[this.data.newsid]
+      }),
+
+      wx.showToast({
+        title: newsCollect[this.data.newsid] ? "收藏成功" : "取消收藏", //三元表达式
+        //表达式 (expr1) ? (expr2) : (expr3)
+        // 在 expr1 求值为 TRUE 时的值为 expr2，在 expr1 求值为 FALSE 时的值为 expr3
+        icon: 'success',
+        duration: 700,
+        mask: true
+      })
   }
+
+
+
 })
