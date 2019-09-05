@@ -26,7 +26,6 @@
 
 .author-name {
   margin-left: 20rpx;
-  margin-top: 10rpx;
   vertical-align: middle;
 }
 
@@ -70,6 +69,12 @@
 .circle-img image {
   width: 45rpx;
   height: 45rpx;
+}
+
+.player {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 50rpx;
 }
 
 .horizon {

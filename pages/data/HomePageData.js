@@ -3,6 +3,11 @@ var initData = [{
     "authorIcon": "https://cn.bing.com/th?id=OIP.Un-kHTeFrNuZ7ZzYUdSx8gHaHa&pid=Api&rs=1",
     "authorName": "新华网",
     "authorDate": "2019/8/31",
+    "music":{
+      "url":"",
+      "title":"献给爱丽丝",
+      "coverImg":""
+    },
     "title": "习近平出席2019年国际篮联篮球世界杯开幕式",
     "articleImg": "http://www.xinhuanet.com/politics/2019-08/30/1124943881_15671849263711n.jpg",
     "articleMinText": "在现场观众倒计时的呼声中，开幕式开始。热情奔放的篮球少年上演活力四射的《我为篮球狂》。32个身着篮球服的少年儿童依次亮相，一一展现印有32个参赛国元素的篮球。",
@@ -14,6 +19,11 @@ var initData = [{
     "authorIcon": "https://cn.bing.com/th?id=OIP.Un-kHTeFrNuZ7ZzYUdSx8gHaHa&pid=Api&rs=1",
     "authorName": "XinHua News",
     "authorDate": "2019/8/31",
+    "music": {
+      "url": "",
+      "title": "献给爱丽丝",
+      "coverImg": ""
+    },
     "title": "Hong Kong's business environment tarnished by protests",
     "articleImg": "http://www.xinhuanet.com/english/2019-09/01/138354497_15672947980541n.jpg",
     "articleMinText": "A passenger takes the Star Ferry from Hong Kong Island to Tsim Sha Tsui in Hong Kong, south China, Aug. 18, 2019.",
@@ -25,6 +35,11 @@ var initData = [{
     "authorIcon": "https://cn.bing.com/th?id=OIP.tdkk7tExnQUltVBT30akjgHaHa&pid=Api&rs=1",
     "authorName": "NHK",
     "authorDate": "2019/8/31",
+    "music": {
+      "url": "",
+      "title": "献给爱丽丝",
+      "coverImg": ""
+    },
     "title": "エアバス最新鋭機「Ａ350 」 国内初の就航 羽田ー福岡路線",
     "articleImg": "http://img0.imgtn.bdimg.com/it/u=3663479954,493959094&fm=26&gp=0.jpg",
     "articleMinText": "ヨーロッパの大手航空機メーカー「エアバス」の最新鋭の旅客機、Ａ350型機の運航が１日から羽田と福岡を結ぶ路線で始まりました。",

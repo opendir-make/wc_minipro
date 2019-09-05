@@ -10,6 +10,7 @@
   <text class="title">{{title}}</text>
   <view class="tools">
     <view class="circle-img">
+      <image bindtap="playerTap" class="player" src="{{isPlaying ? '../../images/player.png':'../../images/player1.png'}}"></image>
       <image wx:if="{{collected}}" catchtap="collectTap" src="../../images/collect.png"></image>
       <image wx:else catchtap="collectTap" src="../../images/collect1.png"></image>
     </view>

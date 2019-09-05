@@ -2,7 +2,8 @@ var newsData = require("../../data/HomePageData.js") //引入数据
 
 Page({
   data: {
-    newsid: ""
+    newsid: "",
+    isPlaying: false
   },
 
   onLoad: function(options) {
@@ -55,6 +56,15 @@ Page({
         duration: 700,
         mask: true
       })
+  },
+
+  playerTap: function(event) {
+    console.log("用户点击了播放按钮");
+    wx.playBackgroundAudio({
+      dataUrl: '../../audios/ABC - 欧阳靖.mp3',
+      title:'ABC - 欧阳靖.mp3',
+      coverImgUrl:""
+    })
   },
 
   onShareAppMessage: function() {
