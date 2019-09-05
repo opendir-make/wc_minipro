@@ -60,10 +60,27 @@ Page({
 
   playerTap: function(event) {
     console.log("用户点击了播放按钮");
-    wx.playBackgroundAudio({
-      dataUrl: '../../audios/ABC - 欧阳靖.mp3',
-      title:'ABC - 欧阳靖.mp3',
-      coverImgUrl:""
+    var that = this;
+    wx.getBackgroundAudioPlayerState({
+      success: function(res) {
+        var status = res.status;
+        if (status != 1) {
+          //没有播放
+          wx.playBackgroundAudio({
+            dataUrl: newsData.initData[that.data.newsid].music.url,
+            title: newsData.initData[that.data.newsid].music.title,
+            coverImgUrl: newsData.initData[that.data.newsid].music.coverImg
+          })
+          that.setData({
+            isPlaying: true
+          })
+        } else {
+          wx.pauseBackgroundAudio();
+          that.setData({
+            isPlaying: false
+          })
+        }
+      }
     })
   },
 
