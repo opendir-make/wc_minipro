@@ -14,8 +14,8 @@
     </swiper-item>
   </swiper>
 
-  <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-    <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}">
+  <block wx:for="{{newData}}" wx:for-item="item" wx:key="key">
+    <view bindtap="goNewsDetail" data-id="{{item.id}}">
       <template is="homeTemplate" data="{{...item}}" />
     </view>
   </block>
