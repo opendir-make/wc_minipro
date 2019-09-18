@@ -2,7 +2,7 @@
   <view class="articlelist">
     <view class="author-info">
       <image class="author-icon" src="https://www.whats-on-netflix.com/wp-content/uploads/2016/04/bbc-documentaries-leaving-netflix.jpeg"></image>
-      <text class="author-name">{{name}}</text>
+      <text class="author-name">{{author}}</text>
       <text class="author-date">{{date}}</text>
     </view>
     <text class="title">{{title}}</text>

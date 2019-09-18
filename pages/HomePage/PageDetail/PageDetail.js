@@ -1,19 +1,20 @@
 var newsDetail = require("../../HomePage/HomePage.js") //引入数据
 
 Page({
+
   data: {
-    //idx: "",
-    isPlaying: false
+    id: "",
+    isPlaying: false,
+    newsDetail:[]
   },
 
   onLoad: function(options) {
     console.log(options.id)
-    console.log(newsDetail.callback.news[options.id])
-
-    //this.setData(newsData.initData[options.newsid]) //获取新闻数据用
-    //this.setData({
-    //  newsid: options.newsid //把唯一id放到data中
-    //})
+    console.log(newsDetail)
+    //this.setData(newsDetail[options.id]) //获取新闻数据用
+    this.setData({
+      id: options.id //把唯一id放到data中
+    })
 
     //读取和存储都是在操作整体
 
@@ -92,5 +93,6 @@ Page({
       title: newsData.initData[this.data.newsid].title,
       path: "pages/HomePage/PageDetail/PageDetail"
     }
-  }
+  },
+
 })

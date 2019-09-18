@@ -1,11 +1,11 @@
 <view class="news-detail-container">
   <view>{{detailData}}</view>
-  <image class="head-img" src="{{articleImg}}"></image>
+  <image class="head-img" src="{{image}}"></image>
   <view class="author-info">
     <image class="author-icon" src="{{authorIcon}}"></image>
-    <text class="author-name">{{authorName}}</text>
+    <text class="author">{{authorName}}</text>
     <text class="const-text">发表于 </text>
-    <text class="author-date">{{authorDate}}</text>
+    <text class="author-date">{{date}}</text>
   </view>
   <text class="title">{{title}}</text>
   <view class="tools">
@@ -16,5 +16,5 @@
     </view>
     <view class="horizon"></view>
   </view>
-  <text class="articleText">{{articleText}}</text>
+  <text class="articleText">{{contest}}</text>
 </view>
