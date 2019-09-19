@@ -7,7 +7,8 @@ Page({
   data: {
     id: "",
     isPlaying: false,
-    newData:[]
+    newData:[],
+    //有数据
   },
 
   onLoad: function(options) {
