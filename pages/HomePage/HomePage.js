@@ -72,8 +72,3 @@ Page({
     })
   },
 })
-
-//导出数据可以被外部访问
-module.exports = {
-  newsData:Page
-}

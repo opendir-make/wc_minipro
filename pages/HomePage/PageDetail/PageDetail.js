@@ -1,20 +1,28 @@
-var newsDetail = require("../../HomePage/HomePage.js") //引入数据
+//引入数据
+var app = getApp();
+var utils = require("../../utils/utils.js")
 
 Page({
 
   data: {
     id: "",
     isPlaying: false,
-    newsDetail:[]
+    newData:[]
   },
 
   onLoad: function(options) {
     console.log(options.id)
-    console.log(newsDetail)
-    //this.setData(newsDetail[options.id]) //获取新闻数据用
     this.setData({
       id: options.id //把唯一id放到data中
     })
+    //console.log(newsDetail)
+    //this.setData(newsDetail[options.id]) //获取新闻数据用
+
+    var publicUrl = app.globalUrl.NewsUrl;
+    var newsUrl = publicUrl + "/v2/top-headlines?country=jp&apiKey=77168bfedb7b408eb62a5de0aa27b70f";
+    //进行网络请求数据
+    utils.http(newsUrl, this.callback)
+
 
     //读取和存储都是在操作整体
 
@@ -34,6 +42,33 @@ Page({
       //扔到本地存储中
       wx.setStorageSync('newsCollect', newsCollect);
     }
+  },
+
+  callback: function(res) {
+    //console.log(res)
+    var news = [];
+    //过滤数据
+    var idx;
+    for (idx in res.articles) {
+      var article = res.articles[idx];
+      //idx是新闻的序号，0开始
+      var temp = {
+        id: idx,
+        title: article.title,
+        author: article.source.name,
+        date: article.publishedAt,
+        description: article.description,
+        image: article.urlToImage,
+        content: article.content,
+      }
+      news.push(temp);
+    }
+    console.log(news)
+    //article是一条数据里全部的信息都有
+    //news[]是temp筛选过的信息
+    this.setData({
+      newData: news
+    }) //传递数据到上面data的useData
   },
 
   collectTap: function(event) {
@@ -90,7 +125,7 @@ Page({
 
   onShareAppMessage: function() {
     return {
-      title: newsData.initData[this.data.newsid].title,
+      title: newsData.initData[this.data.id].title,
       path: "pages/HomePage/PageDetail/PageDetail"
     }
   },
