@@ -7,7 +7,7 @@ Page({
   data: {
     id: "",
     isPlaying: false,
-    newData:[],
+    newData: {},
     //有数据
   },
 
@@ -64,11 +64,11 @@ Page({
       }
       news.push(temp);
     }
-    console.log(news)
+    //console.log(news)
     //article是一条数据里全部的信息都有
     //news[]是temp筛选过的信息
     this.setData({
-      newData: news
+      newData: news[this.data.id]
     }) //传递数据到上面data的useData
   },
 

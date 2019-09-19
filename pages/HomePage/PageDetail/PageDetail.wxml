@@ -1,20 +1,19 @@
 <view class="news-detail-container">
-  <view>{{detailData}}</view>
-  <image class="head-img" src="{{image}}"></image>
-  <view class="author-info">
-    <image class="author-icon" src="{{authorIcon}}"></image>
-    <text class="author">{{authorName}}</text>
-    <text class="const-text">发表于 </text>
-    <text class="author-date">{{date}}</text>
-  </view>
-  <text class="title">{{title}}</text>
-  <view class="tools">
-    <view class="circle-img">
-      <image bindtap="playerTap" class="player" src="{{isPlaying ? '../../images/player.png':'../../images/player1.png'}}"></image>
-      <image wx:if="{{collected}}" catchtap="collectTap" src="../../images/collect.png"></image>
-      <image wx:else catchtap="collectTap" src="../../images/collect1.png"></image>
+    <image class="head-img" src="{{newData.image}}"></image>
+    <view class="author-info">
+      <image class="author-icon" src="{{authorIcon}}"></image>
+      <text class="author">{{newData.author}}</text>
+      <text class="const-text">发表于 </text>
+      <text class="author-date">{{newData.date}}</text>
     </view>
-    <view class="horizon"></view>
+    <text class="title">{{newData.title}}</text>
+    <view class="tools">
+      <view class="circle-img">
+        <image bindtap="playerTap" class="player" src="{{isPlaying ? '../../images/player.png':'../../images/player1.png'}}"></image>
+        <image wx:if="{{collected}}" catchtap="collectTap" src="../../images/collect.png"></image>
+        <image wx:else catchtap="collectTap" src="../../images/collect1.png"></image>
+      </view>
+      <view class="horizon"></view>
+    </view>
+    <text class="articleText">{{newData.content}}</text>
   </view>
-  <text class="articleText">{{contest}}</text>
-</view>
