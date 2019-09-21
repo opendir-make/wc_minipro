@@ -1,1 +1,31 @@
-<text>收藏夹页面</text>
+<view class="index-container">
+
+
+  <text class="btn">收藏夹内容</text>
+
+  <view>
+    <view class="button1" bindtap="goCollecting1">
+
+      <text class="favourtie1">我的收藏夹1</text>
+      <view class="arrows">
+        <image class="arrows1" src="../images/arrows.png"></image>
+      </view>
+      <text class="content1" style="display:flex;margin-top:10% ;font-size: 15px ">*个内容</text>
+
+
+    </view>
+  </view>
+
+  <view>
+    <view class="button2" bindtap="goCollecting2">
+      <text class="favourtie2">我的收藏夹2</text>
+      <view class="arrows">
+        <image class="arrows1" src="../images/arrows.png"></image>
+      </view>
+      <text class="content2" style="display:flex; margin-top:12%;font-size: 15px ">*个内容</text>
+    </view>
+  </view>
+
+
+
+</view>

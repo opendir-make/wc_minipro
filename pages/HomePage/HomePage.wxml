@@ -1,5 +1,5 @@
 <import src="Home-template/Home-template.wxml" />
-//test
+
 <view class="HomePage-container">
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
     <!--banner-->
