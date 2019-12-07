@@ -1,5 +1,5 @@
 <view>
-  <view class="page">
+  <view class="page" bindtap="goToDetail">
     <view>
       <text class="title1">英语四六级应如何复习？</text>
       <text class="content1">本文适合新四六级备考，目标为屡次不过希望短中期(两个月以内)通过考试(425分)的孩纸，一切绝对亲历者说.</text>
