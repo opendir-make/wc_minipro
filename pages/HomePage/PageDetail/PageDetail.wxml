@@ -15,5 +15,5 @@
       </view>
       <view class="horizon"></view>
     </view>
-    <text class="articleText">{{newData.content}}</text>
+    <text class="articleText">{{newData.description}}</text>
   </view>

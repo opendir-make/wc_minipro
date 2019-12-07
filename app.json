@@ -1,11 +1,10 @@
 {
   "pages": [
- 
-    
     "pages/HomePage/HomePage",
     "pages/Favourite/Favourite",
     "pages/Me/Me",
-    "pages/HomePage/PageDetail/PageDetail"
+    "pages/HomePage/PageDetail/PageDetail",
+    "pages/Favourite/article/article"
   ],
   "tabBar": {
     "color": "#7A7E83",

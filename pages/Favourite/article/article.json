@@ -1,2 +1,7 @@
 {
+  "navigationBarBackgroundColor": "#5599FF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "新闻详情",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true
 }

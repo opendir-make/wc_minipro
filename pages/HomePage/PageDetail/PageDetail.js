@@ -31,7 +31,7 @@ Page({
     var newsCollect = wx.getStorageSync('newsCollect');
     //如果newsCollect存在，则代表以前收藏过或者以前取消过收藏
     if (newsCollect) {
-      var newCollect = newsCollect[options.newsid];
+      var newCollect = newsCollect[options.id];
       this.setData({
         collected: newCollect
       })
