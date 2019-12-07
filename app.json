@@ -4,9 +4,6 @@
     
     "pages/HomePage/HomePage",
     "pages/Favourite/Favourite",
-      "pages/Favourite/collecting/collecting",
-      "pages/Favourite/collecting2/collecting2",
-      "pages/Favourite/article/article",
     "pages/Me/Me",
     "pages/HomePage/PageDetail/PageDetail"
   ],

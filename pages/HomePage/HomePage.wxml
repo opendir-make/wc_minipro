@@ -4,7 +4,7 @@
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
     <!--banner-->
     <swiper-item>
-      <image src="https://www.whats-on-netflix.com/wp-content/uploads/2016/04/bbc-documentaries-leaving-netflix.jpeg"></image>
+      <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=478579580,2020219125&fm=26&gp=0.jpg"></image>
     </swiper-item>
     <swiper-item>
       <image src="http://lbimg.tvmao.com/stillcut/KpwpLRSqKn8pVnKsKDwmLR=.jpg"></image>

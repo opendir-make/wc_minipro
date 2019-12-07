@@ -39,7 +39,7 @@ Page({
       //第一次进入根本不存在数据
       var newsCollect = {};
       //把当前唯一id扔到newsCollect对象中，默认false
-      newsCollect[options.newsid] = false;
+      newsCollect[options.id] = false;
       //扔到本地存储中
       wx.setStorageSync('newsCollect', newsCollect);
     }
@@ -76,11 +76,11 @@ Page({
     //newsCollect是所有数据的集合
     var newsCollect = wx.getStorageSync("newsCollect");
     //newCollect是当前一条数据
-    var newCollect = newsCollect[this.data.newsid];
+    var newCollect = newsCollect[this.data.id];
     //点击的时候，如果收藏则取消，如果未收藏则收藏
     newCollect = !newCollect;
     //更新到本地存储中
-    newsCollect[this.data.newsid] = newCollect;
+    newsCollect[this.data.id] = newCollect;
     wx.setStorageSync("newsCollect", newsCollect);
     //更新视图
     this.setData({
@@ -89,7 +89,7 @@ Page({
       }),
 
       wx.showToast({
-        title: newsCollect[this.data.newsid] ? "收藏成功" : "取消收藏", //三元表达式
+        title: newsCollect[this.data.id] ? "收藏成功" : "取消收藏", //三元表达式
         //表达式 (expr1) ? (expr2) : (expr3)
         // 在 expr1 求值为 TRUE 时的值为 expr2，在 expr1 求值为 FALSE 时的值为 expr3
         icon: 'success',
@@ -107,9 +107,9 @@ Page({
         if (status != 1) {
           //没有播放
           wx.playBackgroundAudio({
-            dataUrl: newsData.initData[that.data.newsid].music.url,
-            title: newsData.initData[that.data.newsid].music.title,
-            coverImgUrl: newsData.initData[that.data.newsid].music.coverImg
+            dataUrl: newsData.initData[that.data.id].music.url,
+            title: newsData.initData[that.data.id].music.title,
+            coverImgUrl: newsData.initData[that.data.id].music.coverImg
           })
           that.setData({
             isPlaying: true
